@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+ul,
+ol,
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.displayNone{
+    display: none;
+}
+
+.noteWrapper{
+    position: relative;
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto 3px auto;
+}
+
+.date{
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.text{
+    font-size: 20px;
+}

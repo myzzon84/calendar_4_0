@@ -1,0 +1,44 @@
+.allNoteListWrapper{
+    padding: 20px 0;
+
+    .titleWrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+
+    .plusMinus{
+        position: relative;
+        width: 50px;
+        overflow: hidden;
+    }
+
+    .plusMinusPlus{
+        position: absolute;
+        top: -7px;
+        left: -10px;
+        width: 140%;
+    }
+
+    .minus{
+        top: -38px;
+    }
+
+    .noteWrapper{
+        max-width: 63%;
+    }
+
+    .delete{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 30px;
+        cursor: pointer;
+    }
+}

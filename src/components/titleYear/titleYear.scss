@@ -1,0 +1,25 @@
+.titleYearWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+
+    .arrow{
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .left{
+        transform: rotate(180deg);
+    }
+
+    .year{
+        width: 300px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 900;
+        cursor: pointer;
+        color: rgb(40, 40, 40);
+    }
+}

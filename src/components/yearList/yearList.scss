@@ -1,0 +1,56 @@
+.yearListWrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 30px;
+    border: 2px solid rgb(50, 50, 50);
+    z-index: 2;
+
+
+    .listItem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 19%;
+        font-size: 20px;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .listItemSelected{
+        background-color: rgb(140, 140, 140);
+        border-radius: 10px;
+    }
+
+    .arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 40px;
+    }
+
+    .left{
+        top: 46%;
+        left: -50px;
+        transform: rotate(180deg);
+    }
+
+    .right{
+        right: -50px;
+    }
+
+    .close{
+        position: absolute;
+        top: 0;
+        right: -40px;
+        width: 40px;
+        cursor: pointer;
+    }
+}

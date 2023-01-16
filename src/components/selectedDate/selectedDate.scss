@@ -1,0 +1,21 @@
+.selectedDateWrapper{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 900;
+
+    .addNote{
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .button{
+        margin-bottom: 20px;
+    }
+
+    .selectedDate{
+        margin-bottom: 15px;
+    }
+}

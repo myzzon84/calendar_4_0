@@ -1,0 +1,28 @@
+.monthTitleWrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .arrow{
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .left{
+        transform: rotate(180deg);
+    }
+
+    .month{
+        width: 300px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 900;
+        color: rgb(40, 40, 40);
+        cursor: pointer;
+
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.dayListWrapper{
+    padding: 0 20px;
+    margin: 50px auto 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    height: 440px;
+
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        border-radius: 5px;
+        border: 1px solid rgb(50, 50, 50);
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .dayTitle{
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .weekend{
+        background-color: rgb(255, 156, 156);
+        border: 1px solid rgb(216, 23, 23);
+    }
+
+    .opacity{
+        opacity: .2;
+    }
+
+    .currentDay{
+        box-shadow: 0px 0px 15px 5px rgba(92,92,92,1);
+    }
+
+    .cursor{
+        cursor: default;
+    }
+
+    .labelNote{
+        position: relative;
+        &::after{
+            content: '';
+            width: 12px;
+            height: 12px;
+            background-color: rgb(42, 4, 255);
+            border-radius: 8px;
+            position: absolute;
+            top: 3px;
+            right: 3px;
+        }
+
+        &::before{
+            position: absolute;
+            content: 'Замітка';
+            visibility: hidden;
+            opacity: 0;
+            background-color: rgb(28, 28, 28);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-size: 20px;
+            top: -50px;
+            transition-delay: all 0;
+            transition: all 500ms;
+        }
+    }
+    .labelNote:hover{
+        &::before{
+            opacity: 1;
+            visibility: visible;
+            transition-delay: 500ms;
+        }
+    }
+}

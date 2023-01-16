@@ -1,0 +1,38 @@
+.addNoteFormWrapper{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 20px;
+
+    .textArea{
+        width: 80%;
+        min-height: 100px;
+        padding: 5px 40px 5px 15px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .btn{
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .close{
+        position: absolute;
+        top: 25px;
+        right: 85px;
+        width: 30px;
+        cursor: pointer;
+    }
+}

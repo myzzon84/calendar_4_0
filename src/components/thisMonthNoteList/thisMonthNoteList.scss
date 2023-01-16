@@ -1,0 +1,19 @@
+.thisMonthNoteListWrapper{
+    margin-top: 10px;
+    padding: 5px 50px;
+
+    .monthNoteTitle{
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .delete{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        cursor: pointer;
+    }
+}
