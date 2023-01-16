@@ -210,6 +210,12 @@ const App = () => {
         onSetNoteForm();
     }
 
+    let toDate = (e) => {
+        setDay(Number(e.target.getAttribute('data-day')));
+        setMonth(Number(e.target.getAttribute('data-month')));
+        setTitleYear(Number(e.target.getAttribute('data-year')));
+    }
+
     return (
         <div className="appWrapper">
             <TitleYear
@@ -253,7 +259,8 @@ const App = () => {
                 deleteNote={deleteNote} />
             <AllNoteList
                 data={data}
-                deleteNote={deleteNote} />
+                deleteNote={deleteNote}
+                toDate={toDate} />
         </div>
     );
 }

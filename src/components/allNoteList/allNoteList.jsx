@@ -4,7 +4,7 @@ import './allNoteList.scss';
 import plusMinus from './res/plus-minus.png';
 import del from './res/close.png';
 
-const AllNoteList = ({data, deleteNote}) => {
+const AllNoteList = ({data, deleteNote, toDate}) => {
 
     let sortData = JSON.parse(JSON.stringify(data)).map((item) => {
         let data = item.date.match(/\d+/g).reverse().join('-');
@@ -35,9 +35,6 @@ const AllNoteList = ({data, deleteNote}) => {
             <li 
                 className='noteWrapper' 
                 key={i}
-                data-day={date[1]}
-                data-month={date[2]}
-                data-year={date[0]}
             >
                 <div className="date">
                     {`${date[1]} ${new Date(`${date[2]}`).toLocaleString('uk', {month: 'long'})} ${date[0]}`}
@@ -45,7 +42,13 @@ const AllNoteList = ({data, deleteNote}) => {
                 <div className="text">
                     {`${sortData[i].text}`}
                 </div>
-                <button>
+                <button 
+                    className='toDate' 
+                    data-day={date[1]} 
+                    data-month={date[2]} 
+                    data-year={date[0]}
+                    onClick={toDate}
+                >
                     {'До дати'}
                 </button>
                 <img 
